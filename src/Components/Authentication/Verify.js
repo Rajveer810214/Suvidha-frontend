@@ -24,7 +24,7 @@ function Verify() {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:8000/api/validate/sendotp', {
+      const response = await fetch('https://suvidha-backend.onrender.com/api/validate/sendotp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: credentials.email }),
@@ -51,7 +51,7 @@ function Verify() {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:8000/api/validate/verify', {
+      const response = await fetch('https://suvidha-backend.onrender.com/api/validate/verify', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ otp: credentials.otp }),

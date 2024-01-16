@@ -28,7 +28,7 @@ function DrawerAppBar(props) {
     const fetchAcceptedInterns = async () => {
       try {
         const response = await fetch(
-          "http://localhost:8000/api/users/getuser",
+          "https://suvidha-backend.onrender.com/api/users/getuser",
           {
             headers: {
               "auth-token": localStorage.getItem("authtoken"),

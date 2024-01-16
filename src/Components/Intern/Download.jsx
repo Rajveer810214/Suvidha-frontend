@@ -8,7 +8,7 @@ function OfferLetter() {
   useEffect(() => {
     const fetchAcceptedInterns = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/user/internship/acceptEachUser', {
+        const response = await fetch('https://suvidha-backend.onrender.com/api/user/internship/acceptEachUser', {
           headers: {
             'auth-token': localStorage.getItem('authtoken'),
             'Authorization': 'Bearer yourToken',

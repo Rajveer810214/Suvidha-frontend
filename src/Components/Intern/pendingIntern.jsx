@@ -34,7 +34,7 @@ export default function InternTable() {
       try {
         // Fetch chart data
         const chartResponse = await fetch(
-          `http://localhost:8000/api/user/internship/status-count`,
+          `https://suvidha-backend.onrender.com/api/user/internship/status-count`,
           {
             method: "GET",
             headers: {
@@ -54,7 +54,7 @@ export default function InternTable() {
 
         // Fetch interns data based on status
         const tableResponse = await fetch(
-          `http://localhost:8000/api/user/internship/${internStatus}`,
+          `https://suvidha-backend.onrender.com/api/user/internship/${internStatus}`,
           {
             method: "GET",
             headers: {
@@ -82,7 +82,7 @@ export default function InternTable() {
   const handleDelete = async (internId) => {
     try {
       const response = await fetch(
-        `http://localhost:8000/api/user/delete/${internId}`,
+        `https://suvidha-backend.onrender.com/api/user/delete/${internId}`,
         {
           method: "DELETE",
           headers: {
@@ -128,7 +128,7 @@ export default function InternTable() {
   const handleUpdateIntern = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8000/api/user/edit/${selectedInternId}`,
+        `https://suvidha-backend.onrender.com/api/user/edit/${selectedInternId}`,
         {
           method: "PUT",
           headers: {

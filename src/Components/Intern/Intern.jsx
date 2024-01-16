@@ -37,7 +37,7 @@ function Intern() {
     }
 
     try {
-      const response = await fetch('http://localhost:8000/api/user/internship/apply', {
+      const response = await fetch('https://suvidha-backend.onrender.com/api/user/internship/apply', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json','auth-token':localStorage.getItem('authtoken') },
         body: JSON.stringify({
