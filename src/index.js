@@ -1,12 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-import 'tachyons';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
 // import React, { useState, useEffect } from 'react';
 // import { Container, Row } from 'react-bootstrap';
 // import Button from 'react-bootstrap/Button';
